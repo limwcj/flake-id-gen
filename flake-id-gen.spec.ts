@@ -29,7 +29,6 @@ describe('Flake id', () => {
 
     it('Generate flake id with base64', () => {
       const id = flakeIdGen.next(EncodingType.BASE64);
-      console.log(id);
       expect(id).toBeString();
       expect(id).toHaveLength(11);
     });
